@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Сет Классик",
+    "image": "https://sushibang.pl/assets/uploads/zestaw-_wieczorowy_.png",
+    "description": "12 роллов",
+    "price": 250
+  },
+  {
+    "id": 2,
+    "name": "Сет Лайт",
+    "image": "https://sushibang.pl/assets/uploads/zestaw-20.png",
+    "description": "8 роллов",
+    "price": 180
+  },
+  {
+    "id": 3,
+    "name": "Сет Веган",
+    "image": "https://sushibang.pl/assets/uploads/zestaw-21.png",
+    "description": "10 роллов",
+    "price": 200
+  }
+]
