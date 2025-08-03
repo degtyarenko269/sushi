@@ -18,7 +18,7 @@ function renderCart() {
     cartList.innerHTML = "";
 
     if (cartItems.length === 0) {
-        cartList.innerHTML = "<li>Корзина пустая</li>";
+        cartList.innerHTML = "<li>Кошик порожній</li>";
         return;
     }
 
@@ -26,7 +26,7 @@ function renderCart() {
         const li = document.createElement("li");
         li.innerHTML = `
         ${item}
-        <button onclick="removeFromCart(${index})" style="margin-left: 10px;">Удалить</button>
+        <button onclick="removeFromCart(${index})" style="margin-left: 10px;">Видалити</button>
       `;
         cartList.appendChild(li);
     });
@@ -42,10 +42,10 @@ function removeFromCart(index) {
 function checkout() {
     const cartItems = getCart();
     if (cartItems.length === 0) {
-        alert("Корзина пустая");
+        alert("Кошик порожній");
         return;
     }
-    alert("Спасибо за заказ!");
+    alert("Дякуємо за замовлення!");
     localStorage.removeItem("cart");
     renderCart();
 }

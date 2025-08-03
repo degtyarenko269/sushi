@@ -7,7 +7,7 @@ function loadProducts() {
     fetch("products.json")
         .then(response => response.json())
         .then(products => renderProducts(products))
-        .catch(error => console.error("Ошибка загрузки:", error));
+        .catch(error => console.error("Помилка завантаження:", error));
 }
 
 function renderProducts(products) {
@@ -21,7 +21,7 @@ function renderProducts(products) {
         <img src="${product.image}" alt="${product.name}" />
         <h3>${product.name}</h3>
         <p>${product.description} • ${product.price} грн</p>
-        <button onclick="addToCart('${product.name}')">Добавить</button>
+        <button onclick="addToCart('${product.name}')">Додати</button>
       `;
 
         container.appendChild(itemDiv);
